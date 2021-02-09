@@ -8,11 +8,16 @@
     right: 9px;
 }
 #header {
+    background: #fff;
     width: 100%;
     border-bottom: 1px solid #9b9b9b;
 }
 #banner {
     position: relative;
+}
+
+#event {
+
 }
 
 /* 가운데영역 */
@@ -436,6 +441,43 @@
     margin-right: 0;
 }
 
+
+/* 이벤트 */
+
+.event {
+    overflow: hidden;
+    padding: 100px 0;
+}
+
+.event img {
+    display: block;
+}
+.event h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.event .event_left {
+    float: left;
+    width: 66%;
+    margin-right: 2%;
+    height: 500px;
+}
+.event_left .event_box1 {
+    float: left;
+    width: 50%;
+}
+
+.event_left .event_box2 {
+    float: left;
+    width: 50%;
+}
+
+.event .event_right {
+    float: left;
+    width: 32%;
+}
 /* 미디어쿼리 */
 @media (max-width: 1290px) {
     .container {
