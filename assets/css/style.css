@@ -750,6 +750,10 @@
     margin-right: 0;
 }
 
+.help article.help_box3>div {
+    border: 0;
+}
+
 .help article h3 {
     font-size: 30px;
     font-weight: 500;
@@ -873,6 +877,47 @@
     padding-left: 120px;
 }
 
+/* 고객센터 */
+.service ul {
+    overflow: hidden;
+}
+
+.service li {
+    float: left;
+    width: 50%;
+    height: 193px;
+    box-sizing: border-box;
+    border: 1px solid #d7d7d7;
+    text-align: center;
+}
+
+.service li a span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin: 20px auto 0 auto;
+    overflow: hidden;
+}
+
+.service li a strong {
+    color: #666;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.service li:nth-child(1) {
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.service li:nth-child(2) {
+    border-bottom: 0;
+}
+
+.service li:nth-child(3) {
+    border-right: 0;
+}
+
 
 
 /* 미디어쿼리 */
@@ -933,7 +978,45 @@
     .banner_menu .bm_right ul:first-child {
         display: none;
     }
-}
+    
+    .help article.help_box1 {
+        width: 49%;
+        margin-right: 2%;
+    }
+
+    .help article.help_box2 {
+        width: 49%;
+        margin-right: 0;
+    }
+
+    .help article.help_box3 {
+        width: 100%;
+        margin-top: 2%;
+    }
+
+    .help article {
+        height: auto;
+    }
+
+    .service li {
+        width: 25%;
+        height: auto;
+    }
+
+    .service li:nth-child(1) {
+        border-bottom: 1px solid #d7d7d7;
+    }
+
+    .service li:nth-child(2) {
+        border-bottom: 1px solid #d7d7d7;
+        border-right: 0;
+    }
+
+    .service li a strong {
+        display: block;
+        padding-bottom: 10%;
+    }
+    }
 
 @media (max-width: 960px) {
     .slider {
@@ -980,7 +1063,19 @@
         background: none;
         font-size: 25px;
     }
-}
+
+    .new .new_left {
+        margin-right: 0;
+        height: 400px;
+    }
+
+    .new .new_right {
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+    }
 
 @media (max-width: 768px) {
     body {
@@ -1104,6 +1199,82 @@
     #opening {
         margin: 0;
     }
+    #new .row {
+        padding: 0 24px;
+    }
+
+    .new {
+        padding: 24px;
+        background-color: #fff;
+        margin-top: 24px;
+    }
+
+    .new h2 {
+        font-size: 24px;
+        font-weight: 700;
+        height: 27px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .new .new_right {
+        padding: 24px;
+    }
+
+    #help .row {
+        padding: 0 24px;
+    }
+
+    .help article.help_box1 {
+        padding: 24px;
+        box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        margin-right: 0;
+        margin-top: 24px;
+    }
+
+    .help article.help_box2 {
+        padding: 24px;
+        box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        margin-right: 0;
+        margin-top: 24px;
+    }
+
+    .help article.help_box3 {
+        padding: 24px;
+        width: 95%;
+        background: #fff;
+        margin-top: 0;
+        margin-top: 24px;
+    }
+
+    .help article.help_box1 h3 {
+        font-size: 24px;
+        font-weight: 700;
+        height: 27px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .help article.help_box2 h3 {
+        font-size: 24px;
+        font-weight: 700;
+        height: 27px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .help article.help_box3 h3 {
+        display: none;
+    }
+
+    .help article.help_box3>div {
+        height: auto;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -1294,6 +1465,46 @@
         font-size: 16px;
         font-weight: 400;
         padding-bottom: 0;
+    }
+
+    #new .row {
+        padding: 0 8px;
+    }
+
+    .new {
+        padding: 16px;
+        margin-top: 8px;
+    }
+
+    .new h2 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+
+    .new .new_left {
+        height: 300px;
+    }
+
+    .new .new_right {
+        padding: 17px;
+    }
+
+    .new .new_right .title {
+        font-size: 22px;
+    }
+
+    .new .new_right .star {
+        padding: 9px 0;
+    }
+
+    .new .new_right .select .s1 {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+
+    .new .new_right .select .s2 {
+        width: 100%;
     }
 }
 
