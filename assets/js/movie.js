@@ -35,7 +35,7 @@
         $selector.hideButton.on( "click", hidePlayer );
 
         // YouTube API를 이용해 iframe을 생성
-        function setPlayer( id ) {
+        function setPlayer( id ){
             player.obj = new YT.Player( "trailer", {
                 width: 480,
                 height: 282,
@@ -53,7 +53,7 @@
         }
 
         // 화면 크기에 비례해 iframe의 크기 조절
-        function resizePlayer() {
+        function resizePlayer(){
             var viewport = {}, frame = {}, modal = {};
 
             viewport.width = $( window ).width();
@@ -71,7 +71,7 @@
         }
 
         // iframe 보이기
-        function showPlayer() {
+        function showPlayer(){
             // 처음 클릭시 iframe을 생성 
             if ( !player.obj ) {
                 setPlayer( $selector.showButton.data("youtube") );
@@ -83,7 +83,7 @@
         }
 
         // iframe 감추기
-        function hidePlayer() {
+        function hidePlayer(){
             player.obj.stopVideo();
             $selector.overlay.hide();
             $selector.body.removeClass("modal_on");
